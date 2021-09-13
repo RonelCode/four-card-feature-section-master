@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*primary*/
+     --Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/*neutral*/
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    
+}
+h1{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+    
+}
+span{
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+}
+.content{
+    background-color: var(--Very-Light-Gray);  
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--Very-Light-Gray);
+    
+}
+/*mobile-style*/
+.main-heading{
+    width: 90%;
+    text-align: center;
+    height: 50vh;
+    margin-top: 50px;
+    
+}
+.main-heading p{
+    margin-top: 20px;
+}
+.content-column{
+    width: 90%;
+    margin-top: -90px;
+}
+.set{
+    padding: 40px;
+    height: 45vh;
+    box-shadow: 0px 10px 20px 0px rgb(209, 198, 198);
+    border-radius: 10px;
+    margin-top: 40px;
+    
+}
+.set:nth-child(1){
+    border-top: 4px solid var(--Cyan);
+    
+}
+.set:nth-child(2){
+    border-top: 4px solid var(--Red);
+    
+}
+.set:nth-child(3){
+    border-top: 4px solid var(--Orange);
+    
+}
+.set:nth-child(4){
+    border-top: 4px solid var(--Blue);
+    
+}
+.set img{
+    float: right;
+    margin-top: 90px;
+}
+@media(min-width: 1000px){
+    .main-heading{
+        width: 40%;   
+        
+    }
+    .content-column{
+        display: flex;
+       height: 130vh;
+       margin-top: -200px;
+       margin-right: -260px;
+       justify-content: center;
+    }
+
+    .set{
+        width: 30%;
+        position: relative;
+       margin-left: auto;
+        
+    }
+    
+    .set:nth-child(1){
+    
+    top: 30%;
+    }
+    .set:nth-child(2){
+      left: 2%;
+      top: 5%;
+    }
+    .set:nth-child(3){
+      top: 55%;
+      right: 23%;
+    }
+    .set:nth-child(4){
+       right: 21%;
+       top: 30%;
+        
+    }
+    .set img{
+        margin-top: 60px;
+    }
+
+}
